@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="score">
+        <span class="textscore">YOU</span>
+        <span id="your-score" class="puntuacion">0</span>
+      </div>
+      <span class="titlegame">ROCK PAPER SCISSORS</span>
+      <div class="score pcscore">
+        <span class="textscore">PC</span>
+        <span id="pc-score" class="puntuacion">0</span>
+      </div>
+    </header>
+    <main class="main-simple">
+      <div id="start" class="startsimple hidewindow">
+        <div id="game">
+          <div id="rockbutton" class="rock circle" data-item="rock">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-rock.svg"
+              alt="Botón piedra"
+            />
+          </div>
+          <div id="paperbutton" class="paper circle" data-item="paper">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-paper.svg"
+              alt="Botón papel"
+            />
+          </div>
+          <div id="scissorsbutton" class="scissors circle" data-item="scissors">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-scissors.svg"
+              alt="Botón tijeras"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="end" class="resultsimple hidewindow">
+        <div class="resultyou">
+          <span class="result-text">YOU PICKED</span>
+          <div class="circle">
+            <img
+              id="your-choice"
+              class="icon-button"
+              src=""
+              alt="Botón tijeras"
+            />
+          </div>
+        </div>
+        <div class="result">
+          <span id="result-text" class="result-final">YOU WIN</span>
+          <button id="playagain" class="resultbutton">PLAY AGAIN</button>
+        </div>
+        <div class="resultPC">
+          <span class="result-text">PC PICKED</span>
+          <div class="posible-result">
+            <img
+              id="pc-choice"
+              class="icon-button"
+              src="../assets/images/icon-scissors.svg"
+              alt="Botón tijeras"
+            />
+          </div>
+        </div>
+      </div>
+      <button id="rulesbutton" class="rulebutton">RULES</button>
+    </main>
+    <div id="modal" class="modal">
+      <img
+        class="img-modal"
+        src="../assets/images/image-rules.svg"
+        alt="Imagen de las normas de juego"
+      />
+    </div>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
